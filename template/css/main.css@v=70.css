@@ -2316,6 +2316,17 @@ li.login a:hover {
 	transition: width 0.3s;
 }
 
+.main-footer > ul > li > a:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0px;
+  bottom: 0px;
+  height: 7px;
+  width: 0%;
+  background: #ffcc00;
+}
+
 .main-footer > ul > li > a:hover:before {
 	content: "";
 	position: absolute;

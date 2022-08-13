@@ -3137,6 +3137,12 @@
   100%{-ms-transform:rotate(360deg);}
 }
 
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 @-webkit-keyframes container-rotate{
   to {
     -webkit-transform:rotate(360deg)
