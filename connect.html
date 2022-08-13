@@ -63,16 +63,14 @@
         <div class="block"> 
           <form class="form-horizontal support">
             <div class="form-group float"> 
-              <input type="text" name="title" class="form-control" placeholder="Тема" autocomplete="off">
+              <input type="text" name="title" data-netlify="true" class="form-control" placeholder="Ник вашего персонажа" autocomplete="off">
             </div>
             <div class="form-group float"> 
-              <input type="text" name="email" class="form-control" placeholder="Эл. почта" inputmode="email" autocomplete="off">
+              <input type="text" name="email" data-netlify="true" class="form-control" placeholder="Электронная почта" inputmode="email" autocomplete="off">
             </div>
             <div class="form-group float">
-              <textarea name="message" class="form-control" placeholder="Текст сообщения"></textarea>
+              <textarea name="message" data-netlify="true" class="form-control" placeholder="Комментарий (по желанию)"></textarea>
             </div>
-            <div class="form-group recaptcha">
-              <div class="g-recaptcha"  data-sitekey="6Ld_8ykTAAAAAAQ6I2icsIVp9XknQNU_RQgOPKcj"></div>
               <button type="submit">Отправить</button>
             </div>
           </form>
