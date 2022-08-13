@@ -53,7 +53,7 @@
       </div>
       <div class="col-lg-8 col-md-7 col-sm-6 col-xs-6 right">
         <div class="block"> 
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="contact" action="https://wintershield.ml/спасибо" method="POST" data-netlify="true">
             <p>
               <label for="name">Игровой аккаунт</label>
               <input class="form-control" type="text" id="name" name="name" />
@@ -61,6 +61,12 @@
             <p>
               <label for="message">Комментарий</label>
               <textarea class="form-control" id="message" name="message"></textarea>
+            </p>
+            <p>
+              <label>
+                <span>Прикрепите изображение</span>
+                <input class="form-control" name="file" type="file"/>
+              </label>
             </p>
             <p>
               <button type="submit">Отправить</button>
