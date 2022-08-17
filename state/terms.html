@@ -83,7 +83,7 @@
     </div>
    
     Для получения более подробной информации о терминах на этой странице следует обратиться в контактную службу поддержки пользователей или связаться с классифицированным менеджером комплекса
-    <span class="doc-title">Аббревиатуры, символы и термины</span>
+    <span class="doc-title">Аббревиатуры, символы и пояснение к терминам</span>
     <pre class="link"><code>https://wintershield.ml/state/terms</code></pre>
     <span class="doc-title">Параметры</span>
     <div class="doc table-responsive">
@@ -98,23 +98,23 @@
         </thead>
         <tbody>
           <tr>
-            <td>pay_id</td>
-            <td>число</td>
-            <td>Нет</td>
-            <td>Номер заказа в системе продавца</td>
+            <td>null</td>
+            <td>uuid</td>
+            <td>id</td>
+            <td>Нулевое число или значение</td>
           </tr>
           <tr>
-            <td>offset</td>
-            <td>число</td>
+            <td>null</td>
+            <td>uuid</td>
             <td>Нет</td>
-            <td>Смещение, необходимое для выборки определенного подмножества транзакций (по умолчанию — <code>0</code>).<br><br> <b>Важно!</b> В ответе содержится 1000 транзакций</b></td>
+            <td>Ничего, тут пусто (по умолчанию — <code>пустота</code>).<br><br> <b>Важно!</b> Нет ничего важнее семьи!</b></td>
           </tr>
           <tr>
-            <td>sign</td>
-            <td>строка</td>
-            <td>Да</td>
+            <td>null</td>
+            <td>uuid</td>
+            <td>id</td>
             <td>Подпись запроса. Формируется путем склеивания параметров и создания хэша <pre><code>hash('sha256', 'payments[API_ID][project_id][API_KEY]')</code></pre></td>
-          </tr>                                                                     
+          </tr>
         </tbody>
       </table>
     </div>
