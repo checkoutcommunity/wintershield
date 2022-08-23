@@ -1,0 +1,15 @@
+{
+  "name": "Помощь OZON",
+  "short_name": "Помощь OZON",
+  "start_url": "/main/",
+  "scope": "/main/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/main/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}

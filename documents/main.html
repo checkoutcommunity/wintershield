@@ -1,0 +1,489 @@
+﻿<!DOCTYPE html>
+<html lang="ru" dir="">
+
+<head>
+  <meta name="generator" content="Hugo 0.79.0">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="   Seller API  API продавца для работы с маркетплейсом Ozon: от получения пропуска на склад до формирования отчёта о возвратах     Rocket API  API сервиса доставки посылок для интернет-магазинов: работа с заказами, создание заявок на отгрузку, отслеживание отправлений     API рекламной платформы  API для работы с рекламным кабинетом: запуск рекламной кампании, обновление ставок товаров, получение статистики по кампаниям     API поставщика  API для автоматизации работы поставщика: создание пропуска на склад, получение списка заявок на поставку и ярлыков для палет     API перевозчика  API для управления работой магистрального перевозчика: забор, приёмка и выгрузка товаров     API логистической платформы  API для интеграции логистических компаний (3PL) с логистической платформой Ozon: создание, получение и обновление списка маршрутов, услуг доставки и пунктов выдачи     API партнёра  API для партнёров: отправка писем и СМС     Помощь Ozon для покупателей  Сроки доставки, способы оплаты, гарантии и другие вопросы от покупателей Ozon     Seller Help Global  База знаний для продавцов из-за рубежа     Ozon Rocket  Сервис доставки для онлайн-магазинов     Реферальная программа  Публичная оферта, правила оказания услуг по привлечению клиентов, рекламные стандарты и условия акций     Рекламная платформа  Помощь для пользователей рекламной системы     Поставщики Ozon  Помощь и оферты для поставщиков Ozon     Retail Center  Помощь по работе в личном кабинете Retail Center для поставщиков Ozon     Ozon Invest  Займы на развитие бизнеса с Ozon     Юридические документы  Юридические договоры, регламенты, условия акций     Приложение для водителей  Мобильное приложение для водителей и инструкция к нему   ">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Чем вам помочь?">
+<meta property="og:description" content="">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://docs.ozon.ru/main/">
+
+<title>Чем вам помочь? | Помощь OZON</title>
+<link rel="manifest" href="main/manifest.json">
+<link rel="icon" href="main/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="main/book.min.d479a760b309112be10f5679e205b75f31a8828830d55694f1cbdc25c23cadbc.css" integrity="sha256-1HmnYLMJESvhD1Z54gW3XzGogogw1VaU8cvcJcI8rbw="><link rel="alternate" type="application/rss+xml" href="main/index.xml" title="Помощь OZON">
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+
+
+
+
+  
+  <script src="s3/ozts/lts/sdk.js"></script>
+  <script>
+    window.addEventListener('load', async () => {
+      try {
+        await fetch('https://ozon.ru/api/composer-api.bx/_action/authRefreshWeb', { mode: 'no-cors'});
+      } finally {
+        if (typeof window.$tracker === 'object') {
+          window.$tracker.init({
+            namespace: 'docs'
+          });
+        }
+      }
+
+      const header = document.querySelector('#book-header');
+
+      function onPageScroll(header) {
+        if (window.scrollY > 0) {
+          if (!header.classList.contains('book-title__wrapper--shadow')) {
+            header.classList.add('book-title__wrapper--shadow');
+          }
+        } else {
+          header.classList.remove('book-title__wrapper--shadow');
+        }
+      }
+
+      onPageScroll(header);
+      document.addEventListener('scroll', (event) => onPageScroll(header));
+    })
+  </script>
+<script async="" src='/cdn-cgi/bm/cv/669835187/api.js'></script></head>
+
+<body dir="">
+  <input type="checkbox" class="hidden toggle" id="menu-control">
+  <input type="checkbox" class="hidden toggle" id="toc-control">
+  <main class="container flex">
+    <div class="book-page">
+      <div id="book-header" class="book-title__wrapper">
+        <img src="main/logo.svg" alt="Ozon Docs" width="131px">
+      </div>
+
+      
+
+      
+
+
+      <div class="book-content">
+        
+  <article class="markdown">
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 1" data-row="api">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/api/seller"><img src="main/icon_api_seller.svg" alt="Seller API"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="seller-apihttpsdocsozonruapiseller"><a href="https://docs.ozon.ru/api/seller">Seller API</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    API продавца для работы с маркетплейсом Ozon: от получения пропуска на склад до формирования отчёта о возвратах
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 2" data-row="api">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/api/rocket"><img src="main/icon_api_rocket.svg" alt="Rocket API"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="rocket-apihttpsdocsozonruapirocket"><a href="https://docs.ozon.ru/api/rocket">Rocket API</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    API сервиса доставки посылок для интернет-магазинов: работа с заказами, создание заявок на отгрузку, отслеживание отправлений
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 3" data-row="api">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/api/performance"><img src="main/icon_api_adv.svg" alt="API рекламной платформы"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="api-рекламной-платформыhttpsdocsozonruapiperformance"><a href="https://docs.ozon.ru/api/performance">API рекламной платформы</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    API для работы с рекламным кабинетом: запуск рекламной кампании, обновление ставок товаров, получение статистики по кампаниям
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 4" data-row="api">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/api/retail"><img src="main/icon_api_provider.svg" alt="API поставщика"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="api-поставщикаhttpsdocsozonruapiretail"><a href="https://docs.ozon.ru/api/retail/">API поставщика</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    API для автоматизации работы поставщика: создание пропуска на склад, получение списка заявок на поставку и ярлыков для палет
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 5" data-row="api">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/api/agent"><img src="main/icon_api_agent_ozon.svg" alt="Агенты Ozon"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="api-перевозчикаhttpsdocsozonruapiagent"><a href="https://docs.ozon.ru/api/agent">API перевозчика</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    API для управления работой магистрального перевозчика: забор, приёмка и выгрузка товаров
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 6" data-row="api">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/api/logistic-platform"><img src="main/icon_api_seller.svg" alt="API логистической платформы"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="api-логистической-платформыhttpsdocsozonruapilogistic-platform"><a href="https://docs.ozon.ru/api/logistic-platform">API логистической платформы</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    API для интеграции логистических компаний (3PL) с логистической платформой Ozon: создание, получение и обновление списка маршрутов, услуг доставки и пунктов выдачи
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 7" data-row="api">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/api/comms"><img src="main/icon_api_comms.svg" alt="API партнёра"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="api-партнёраhttpsdocsozonruapicomms"><a href="https://docs.ozon.ru/api/comms">API партнёра</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    API для партнёров: отправка писем и СМС
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 1" data-row="help">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/common"><img src="main/icon_help_buyer.svg" alt="Помощь Ozon для покупателей"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="помощь-ozon-для-покупателейhttpsdocsozonrucommon"><a href="https://docs.ozon.ru/common">Помощь Ozon для покупателей</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    Сроки доставки, способы оплаты, гарантии и другие вопросы от покупателей Ozon
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 2" data-row="help">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/global"><img src="main/icon_help_global.svg" alt="Seller Help Global"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="seller-help-globalhttpsdocsozonruglobal"><a href="https://docs.ozon.ru/global">Seller Help Global</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    База знаний для продавцов из-за рубежа
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 3" data-row="help">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/rocket"><img src="main/icon_help_rocket.svg" alt="Ozon Rocket"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="ozon-rockethttpsdocsozonrurocket"><a href="https://docs.ozon.ru/rocket">Ozon Rocket</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    Сервис доставки для онлайн-магазинов
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 4" data-row="help">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/referral"><img src="main/icon_help_referal.svg" alt="Реферальная программа"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="реферальная-программаhttpsdocsozonrureferral"><a href="https://docs.ozon.ru/referral">Реферальная программа</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    Публичная оферта, правила оказания услуг по привлечению клиентов, рекламные стандарты и условия акций
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 5" data-row="help">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/performance"><img src="main/icon_help_adv.svg" alt="Рекламная платформа"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="рекламная-платформаhttpsdocsozonruperformance"><a href="https://docs.ozon.ru/performance">Рекламная платформа</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    Помощь для пользователей рекламной системы
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 6" data-row="help">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/retail"><img src="main/icon_help_provider.svg" alt="Поставщики Ozon"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="поставщики-ozonhttpsdocsozonruretail"><a href="https://docs.ozon.ru/retail">Поставщики Ozon</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    Помощь и оферты для поставщиков Ozon
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 7" data-row="help">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/retailcenter"><img src="main/icon_help_provider.svg" alt="Retail Center"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="retail-centerhttpsdocsozonruretailcenter"><a href="https://docs.ozon.ru/retailcenter">Retail Center</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    Помощь по работе в личном кабинете Retail Center для поставщиков Ozon
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 8" data-row="help">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/invest"><img src="main/icon_help_invest.svg" alt="Ozon Invest"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="ozon-investhttpsdocsozonruinvest"><a href="https://docs.ozon.ru/invest">Ozon Invest</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    Займы на развитие бизнеса с Ozon
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 9" data-row="help">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/legal"><img src="main/icon_help_docs.svg" alt="Юридические документы"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="юридические-документыhttpsdocsozonrulegal"><a href="https://docs.ozon.ru/legal">Юридические документы</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    Юридические договоры, регламенты, условия акций
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="card" style="grid-row: 10" data-row="help">
+  <div class="card__icon">
+    <a href="https://docs.ozon.ru/drivers/"><img src="main/mobile_app_v2.svg" alt="Мобильное приложение для водителей"></a>
+  </div>
+  <div class="card__title">
+    <h2 id="приложение-для-водителейhttpsdocsozonrudrivers"><a href="https://docs.ozon.ru/drivers/">Приложение для водителей</a></h2>
+
+  </div>
+  <div class="card__subtitle">
+    Мобильное приложение для водителей и инструкция к нему
+  </div>
+</div>
+
+</article>
+ 
+      </div>
+
+      
+    </div>
+  </main>
+
+  
+<script>(function(){window['__CF$cv$params']={r:'73f24ffe7cbb9db1',m:'Zl818JbwjMLMdKvJYf9FoOLQxeE5vwvlUe4fzPX27YE-1661241604-0-AUDRqZSNm7eilr29WLuJGAMdiXajGmy0WVJJpIxcNEZcNh0pOK95LT48YnsFgwzKXQucy1v9BTyG0F9ARsALWYO8rrVRQSRA+BO5Ynk9uo7PR2dCC2whFUuFOOMqADBf6g==',s:[0xcd027b104c,0x4b5514fbe5],}})();</script></body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

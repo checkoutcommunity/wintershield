@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Чем вам помочь? on Помощь OZON</title>
+    <link>https://docs.ozon.ru/main/</link>
+    <description>Recent content in Чем вам помочь? on Помощь OZON</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="https://docs.ozon.ru/main/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>404</title>
+      <link>https://docs.ozon.ru/main/404/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.ozon.ru/main/404/</guid>
+      <description>  Ууупс! Страница не найдена Вернуться назад</description>
+    </item>
+    
+    <item>
+      <title>500</title>
+      <link>https://docs.ozon.ru/main/500/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.ozon.ru/main/500/</guid>
+      <description>  Внутренняя ошибка сервера. Попробуйте зайти позднее Понятно</description>
+    </item>
+    
+    <item>
+      <title>Ошибка</title>
+      <link>https://docs.ozon.ru/main/error/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.ozon.ru/main/error/</guid>
+      <description>  Ой, что-то пошло не так Понятно</description>
+    </item>
+    
+    <item>
+      <title>Тестовое задание на вакансию Технического писателя в Ozon</title>
+      <link>https://docs.ozon.ru/main/contest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.ozon.ru/main/contest/</guid>
+      <description>Стиль #  Напишите инструкцию для какого-то рутинного действия на ваш выбор. Например, как приготовить завтрак или, если у вас есть хобби, как начать им заниматься.
+Лучше, если это будет текстовая инструкция, но если вам захотелось снять видео или спеть песню — не ограничивайте себя :) Нам важно понять, в каком стиле и какими речевыми конструкциями вы доносите свои мысли.
+Системность мышления* #  Можете дополнить первое задание схемой взаимодействия компонентов.</description>
+    </item>
+    
+  </channel>
+</rss>
