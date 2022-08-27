@@ -10,11 +10,3 @@ RewriteRule [^/]$ %{REQUEST_URI}.html [QSA,L]
 RewriteRule ^index\.html$ / [R=301,L]
 RewriteRule ^(.*)/index\.html$ /$1/ [R=301,L]
 ErrorDocument 404 https://wintershield.ml/
-$ip = $_SERVER['REMOTE_ADDR'];
-$ipInfo = json_decode(file_get_contents("http://ip-api.com/json/{$ip}?fields=status,message,country,countryCode"), true);
-
-if(isset($ipInfo['country']) && $ipInfo['country'] != 'Russia') {
-  //print('BLOCKED COUNTRY');	
-    http_response_code(403);
-    die('Forbidden');
-}
